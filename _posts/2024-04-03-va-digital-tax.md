@@ -13,7 +13,7 @@ image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifydVl_lN1l9P
 
 ### Summary
 
-Summary: Virginia's legislature passed a budget bill that would impose a sales tax on digital goods and some digital services starting in January 2025. This tax would apply to things like downloads, streaming services, and software, similar to the tax currently placed on physical goods.  
+Virginia's legislature passed a budget bill that would impose a sales tax on digital goods and some digital services starting in January 2025. This tax would apply to things like downloads, streaming services, and software, similar to the tax currently placed on physical goods.  
 
 There was some debate about whether businesses would also be taxed on their digital purchases. In the end, the compromise exempts business purchases of most digital services, but not software applications. The bill now goes to the governor for his approval. 
 
