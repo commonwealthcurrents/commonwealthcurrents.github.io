@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Page title -->
+  <title>{{ page.title | default: site.title | escape }}</title>
 
-  <body>
+  <!-- Open Graph / Facebook / Discord / Reddit -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | escape }}">
+  <meta property="og:image" content="{{ page.image | default: site.default_image }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
 
-    {%- include views/header.html -%}
+  <!-- Twitter (X) Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YourXHandle"> <!-- Replace with your actual X (Twitter) handle -->
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | escape }}">
+  <meta name="twitter:image" content="{{ page.image | default: site.default_image }}">
 
-    {%- include views/banner.html -%}
+  <!-- Other head elements like CSS links, favicon, etc. -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="{{ site.favicon | default: '/favicon.ico' }}">
+</head>
 
-    {%- include extensions/hashlocate.html -%}
+<body>
 
-    {%- include extensions/theme-toggle.html -%}
+  <!-- Include the header -->
+  {%- include views/header.html -%}
 
-    {%- include extensions/click-to-top.html -%}
+  <!-- Include the banner (optional) -->
+  {%- include views/banner.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  <!-- Include extensions like hash location, theme toggle, etc. -->
+  {%- include extensions/hashlocate.html -%}
+  {%- include extensions/theme-toggle.html -%}
+  {%- include extensions/click-to-top.html -%}
 
-    {%- include views/footer.html -%}
+  <!-- Main content of the page -->
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
 
-  </body>
+  <!-- Include the footer -->
+  {%- include views/footer.html -%}
+
+</body>
 </html>
