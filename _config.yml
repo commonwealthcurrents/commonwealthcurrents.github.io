@@ -24,9 +24,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site settings
 title: Commonwealth Innovation Currents
 email: opportunities@ronniebailey.cloud
 author: Ronnie Bailey
+description: >- 
+  Stay updated with the latest trends in economics, technology, and innovation in Virginia and beyond.
+
+# Add a default image for Open Graph and Twitter Cards
+default_image: "https://yourdomain.com/path-to-default-image.jpg"
+
+# Add Open Graph and Twitter meta tags globally
+jekyll-seo-tag:
+  type: website
+  title: "{{ page.title | default: site.title }}"
+  description: "{{ page.description | default: site.description }}"
+  image: "{{ page.image | default: site.default_image }}"
+  url: "{{ page.url | absolute_url }}"
+  twitter:
+    card: summary_large_image
+    site: "@YourTwitterHandle"
+    title: "{{ page.title | default: site.title }}"
+    description: "{{ page.description | default: site.description }}"
+    image: "{{ page.image | default: site.default_image }}"
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
