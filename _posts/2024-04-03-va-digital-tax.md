@@ -2,6 +2,7 @@
 layout: post
 title: "Virginia Getting Digital with its Sales Tax"
 subtitle: Here's What You Need to Know
+excerpt_image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifydVl_lN1l9PeTl9aHYDHn_XQOFm1XwF2n-szgq5Q2KbRVxKhBHgZ9keIxmKULcW49UW4Mc9Zu2lYGp7O73fNjXjvxwNGSZFZFP6qkGQU-jq69q4vtCVBA6DndhuW4TVSGylTFnX9YNKYAKFD6fS9MX3VShOCcuorr47kDEOoKEeQP9lulfouV-chjBn6/s1160/featured.jpg
 categories: economics taxes
 tags: [economics taxes downloads]
 image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifydVl_lN1l9PeTl9aHYDHn_XQOFm1XwF2n-szgq5Q2KbRVxKhBHgZ9keIxmKULcW49UW4Mc9Zu2lYGp7O73fNjXjvxwNGSZFZFP6qkGQU-jq69q4vtCVBA6DndhuW4TVSGylTFnX9YNKYAKFD6fS9MX3VShOCcuorr47kDEOoKEeQP9lulfouV-chjBn6/s1160/featured.jpg"
