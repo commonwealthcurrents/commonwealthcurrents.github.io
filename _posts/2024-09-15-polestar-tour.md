@@ -5,7 +5,7 @@ subtitle: Exploring the blend of minimalist design, cutting-edge technology, and
 excerpt_image: pole4.JPG
 categories: EV, electric, vehicles, DC, Polestar, test drive
 tags: EV, electric, vehicles, DC, Polestar, test drive
-image: "hpole4.jpg"
+image: "pole4.jpg"
 ---
 
 ![The Polestar 4 just after arrival at the D.C. dealership.](pole4.JPG)
