@@ -2,13 +2,13 @@
 layout: post
 title: "Polestar’s Electric Vision: A Deep Dive into the Polestar 3 and 4 at D.C.’s Futuristic Showroom"
 subtitle: Exploring the blend of minimalist design, cutting-edge technology, and sustainable luxury in Polestar’s latest electric vehicles
-excerpt_image: pole4.JPG
+excerpt_image: assets/images/pole4.JPG
 categories: EV, electric, vehicles, DC, Polestar, test drive
 tags: EV, electric, vehicles, DC, Polestar, test drive
-image: "pole4.jpg"
+image: "assets/images/pole4.JPG"
 ---
 
-![The Polestar 4 just after arrival at the D.C. dealership.](pole4.JPG)
+![The Polestar 4 just after arrival at the D.C. dealership.](assets/images/pole4.JPG)
 {: .center-block :}
 
 
