@@ -2,9 +2,9 @@
 layout: post
 title: "Polestar’s Electric Vision: A Deep Dive into the Polestar 3 and 4 at D.C.’s Futuristic Showroom"
 subtitle: Exploring the blend of minimalist design, cutting-edge technology, and sustainable luxury in Polestar’s latest electric vehicles
-excerpt_image: polestar4.JPG
+excerpt_image: pole4.JPG
 categories: EV, electric, vehicles, DC, Polestar, test drive
-tags: [economics taxes downloads]
+tags: EV, electric, vehicles, DC, Polestar, test drive
 image: "hpolestar4.jpg"
 ---
 
@@ -52,7 +52,7 @@ Battery life and range are often concerns with EVs, but the Polestar 3 puts thos
 The tech features extend beyond the infotainment system. The Polestar 3 comes equipped with an array of sensors and cameras that enable advanced driver-assistance systems (ADAS). Features like adaptive cruise control, lane-keeping assist, and blind-spot monitoring make driving not just easier but safer. The integration of technology is seamless, enhancing the driving experience without overwhelming you.
 
 
-### Polestar 4: A Glimpse into the Future of Electric Mobility
+###Polestar 4: A Glimpse into the Future of Electric Mobility
 
 After returning the Polestar 3, I made my way to the Polestar 4. If the Polestar 3 is about redefining the present, the Polestar 4 is all about the future. Positioned prominently in its own area of the showroom, it immediately grabs your attention with its avant-garde design.
 
