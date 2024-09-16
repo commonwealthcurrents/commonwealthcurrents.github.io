@@ -8,8 +8,7 @@ tags: EV, electric, vehicles, DC, Polestar, test drive
 image: "https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG"
 ---
 
-![The Polestar 4 just after arrival at the D.C. dealership](https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG)
-{: .center-block :}
+![The Polestar 4 just after arrival at the D.C. dealership](https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG){: .center-block style="max-width:100%; height:auto;" }
 
 
 ### Summary
