@@ -2,13 +2,13 @@
 layout: post
 title: "Polestar’s Electric Vision: A Deep Dive into the Polestar 3 and 4 at D.C.’s Futuristic Showroom"
 subtitle: Exploring the blend of minimalist design, cutting-edge technology, and sustainable luxury in Polestar’s latest electric vehicles
-excerpt_image: https://github.com/commonwealthcurrents/commonwealthcurrents.github.io/blob/master/images/IMG_6903.JPG
+excerpt_image: https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG
 categories: EV, electric, vehicles, DC, Polestar, test drive
 tags: EV, electric, vehicles, DC, Polestar, test drive
-image: "https://github.com/commonwealthcurrents/commonwealthcurrents.github.io/blob/master/images/IMG_6903.JPG"
+image: "https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG"
 ---
 
-![The Polestar 4 just after arrival at the D.C. dealership.](https://github.com/commonwealthcurrents/commonwealthcurrents.github.io/blob/master/images/IMG_6903.JPG)
+![The Polestar 4 just after arrival at the D.C. dealership.]([https://github.com/commonwealthcurrents/commonwealthcurrents.github.io/blob/master/images/IMG_6903.JPG](https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG))
 {: .center-block :}
 
 
