@@ -11,6 +11,8 @@ image: "https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurre
 ![The Polestar 4 just after arrival at the D.C. dealership](https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG){: .center-block style="max-width:100%; height:auto;" }
 
 
+<img src="https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG" alt="The Polestar 4 just after arrival at the D.C. dealership" class="center-block" style="max-width:100%; height:auto;">
+
 ### Summary
 
 I recently visited the Polestar dealership in Washington, D.C., to experience firsthand the innovative Polestar 3 and Polestar 4 electric vehicles. The showroom itself felt like a modern art gallery, with its minimalist design and industrial-chic ambiance highlighting the cars as works of art. From test-driving the Polestar 3 through the city’s streets to exploring the futuristic features of the Polestar 4, the visit offered an immersive look into how Polestar is shaping the future of electric mobility with a focus on design excellence, technological innovation, and sustainability.
