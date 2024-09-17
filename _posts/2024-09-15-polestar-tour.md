@@ -8,10 +8,11 @@ categories: [EV, electric, vehicles, DC, Polestar, test drive]
 tags: [EV, electric, vehicles, DC, Polestar, test drive]
 image: "https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG"
 banner:
-  video: https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/videos/polestar1.mov
+  video: https://your-video-hosting-service.com/path/to/polestar1.mov
   loop: true
   volume: 0.8
   start_at: 0
+  image: https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG
   opacity: 0.618
   background: "#000"
   height: "100vh"
@@ -19,7 +20,6 @@ banner:
   heading_style: "font-size: 3em; font-weight: bold;"
   subheading_style: "color: gold"
 ---
-
 
 <img src="https://raw.githubusercontent.com/commonwealthcurrents/commonwealthcurrents.github.io/master/images/IMG_6903.JPG" alt="The Polestar 4 just after arrival at the D.C. dealership" class="center-block" style="max-width:100%; height:auto;">
 
