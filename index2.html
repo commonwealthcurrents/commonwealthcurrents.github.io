@@ -1,116 +1,542 @@
-<article class="post-page">
-  <header class="post-hero">
-    <div class="post-hero-media">
-      <img src="/images/polestar-dc-hero.jpg" alt="Polestar vehicle at the Washington, D.C. showroom">
-    </div>
-    <div class="post-hero-overlay"></div>
-    <div class="post-hero-content">
-      <p class="post-kicker">Mobility / EVs / Design</p>
-      <h1>Polestar’s Electric Vision: A Visit to the D.C. Showroom</h1>
-      <p class="post-subtitle">
-        A closer look at the Polestar 3 and 4 through the lens of design, tech, and atmosphere.
-      </p>
-      <div class="post-meta">
-        <span>By Ronnie Bailey</span>
-        <span>•</span>
-        <span>Washington, D.C.</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThreatLines | Signal over noise</title>
+  <style>
+    :root {
+      --bg: #0a0d12;
+      --panel: #0f141b;
+      --panel-2: #131a22;
+      --text: #d9e1ea;
+      --muted: #7f8b99;
+      --line: #1d2732;
+      --accent: #5ea3ff;
+      --accent-soft: rgba(94, 163, 255, 0.12);
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #091019 0%, #0a0d12 18%, #0a0d12 100%);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(10, 13, 18, 0.82);
+      border-bottom: 1px solid rgba(29, 39, 50, 0.75);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 72px;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 1.05rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #eef4fb;
+    }
+
+    .brand-tag {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: #b1bcc8;
+      font-size: 0.94rem;
+    }
+
+    .nav a:hover { color: #fff; }
+
+    .hero {
+      padding: 72px 0 44px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 34px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9bb0c8;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 1px;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      color: #f3f7fc;
+      max-width: 11ch;
+    }
+
+    .hero-copy {
+      max-width: 62ch;
+      font-size: 1.03rem;
+      color: #b8c3cf;
+      margin: 0;
+    }
+
+    .hero-copy strong {
+      color: #f5f9ff;
+      font-weight: 600;
+    }
+
+    .hero-panel {
+      background: linear-gradient(180deg, rgba(19, 26, 34, 0.85), rgba(12, 17, 23, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 10px 34px rgba(0,0,0,0.22);
+    }
+
+    .panel-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #8da0b4;
+      margin-bottom: 12px;
+    }
+
+    .signal-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .signal-item {
+      padding: 12px 0;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      color: #dbe4ee;
+    }
+
+    .signal-item:first-child { border-top: 0; padding-top: 0; }
+
+    .signal-item span {
+      display: block;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.75fr);
+      gap: 34px;
+      padding: 42px 0 72px;
+    }
+
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #91a3b7;
+      font-weight: 600;
+    }
+
+    .featured {
+      background: linear-gradient(180deg, rgba(15, 20, 27, 0.95), rgba(11, 15, 20, 1));
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      margin-bottom: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(94,163,255,0.16), transparent 70%);
+      pointer-events: none;
+    }
+
+    .kicker {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #b9d6ff;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .featured h3 {
+      margin: 0 0 12px;
+      font-size: clamp(1.6rem, 2vw, 2.2rem);
+      line-height: 1.1;
+      color: #f4f8fd;
+      max-width: 17ch;
+    }
+
+    .featured p {
+      margin: 0 0 20px;
+      color: #b7c1cc;
+      max-width: 60ch;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .posts {
+      display: grid;
+      gap: 16px;
+    }
+
+    .post-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: start;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      transition: transform 0.18s ease, border-color 0.18s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-2px);
+      border-color: #29415c;
+    }
+
+    .post-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.16rem;
+      line-height: 1.2;
+      color: #eef4fa;
+    }
+
+    .post-card p {
+      margin: 0 0 10px;
+      color: #aeb9c5;
+      font-size: 0.96rem;
+      max-width: 58ch;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      color: #8fb7f6;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .date {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-top: 4px;
+    }
+
+    .sidebar {
+      display: grid;
+      gap: 16px;
+      align-self: start;
+      position: sticky;
+      top: 92px;
+    }
+
+    .side-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+    }
+
+    .side-card h3 {
+      margin: 0 0 14px;
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #94a7bb;
+    }
+
+    .side-card p,
+    .side-card li {
+      color: #b0bcc8;
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .side-card ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .quote {
+      border-left: 2px solid var(--accent);
+      padding-left: 14px;
+      color: #dce7f3;
+      font-size: 1rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 26px 0 48px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      h1 {
+        max-width: 13ch;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        align-items: flex-start;
+        padding: 14px 0;
+      }
+
+      .nav {
+        gap: 12px;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .featured,
+      .post-card,
+      .side-card,
+      .hero-panel {
+        border-radius: 18px;
+      }
+
+      .post-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <a href="#" class="brand-name">ThreatLines</a>
+        <div class="brand-tag">Signal over noise.</div>
       </div>
+      <nav class="nav">
+        <a href="#writing">Writing</a>
+        <a href="#notes">Notes</a>
+        <a href="#about">About</a>
+      </nav>
     </div>
   </header>
 
-  <section class="post-body">
-    <p class="post-lead">
-      Some showrooms feel transactional. This one felt curated. Walking into Polestar’s Washington,
-      D.C. space was less like entering a dealership and more like stepping into a minimalist design
-      exhibit built around electric vehicles.
-    </p>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Personal journal</div>
+        <h1>Technology, systems, and the experiences that made me care about them.</h1>
+        <p class="hero-copy">
+          A personal space for <strong>technology, cybersecurity, hardware, and curiosity</strong> — shaped by both professional experience and a long-standing interest in how tech actually feels to use, explore, and live with. Some writing leans structured. Some is more exploratory.
+        </p>
+      </div>
 
-    <h2>A showroom that understands presentation</h2>
-    <p>
-      The first thing that stood out was restraint. The space avoided the usual dealership clutter
-      and let the vehicles carry the experience. Glass, concrete, open floor space, soft lighting,
-      and subtle branding gave everything a gallery-like calm. It felt intentional. Nothing screamed
-      for attention, which made the cars feel even more central.
-    </p>
-
-    <p>
-      The environment matched Polestar’s broader identity: clean, modern, and heavily shaped by
-      industrial design language. Interactive displays were present, but they did not dominate the
-      room. Staff were available without hovering. It made the whole visit feel less like a sales
-      push and more like an invitation to explore.
-    </p>
-
-    <h2>The Polestar 3 in person</h2>
-    <p>
-      Of the two vehicles, the Polestar 3 felt the most immediately grounded in everyday use. It has
-      the stance of a modern SUV, but it avoids the bloated look a lot of vehicles in this category
-      have. The lines are sharp, the profile is athletic, and the overall form feels engineered rather
-      than overstyled.
-    </p>
-
-    <p>
-      Inside, the cabin continues the same disciplined approach. The dashboard is minimal, the screen
-      layout is clean, and the materials feel deliberate rather than decorative. Nothing about it felt
-      cheap or gimmicky. It gave the impression of a vehicle designed for people who care about both
-      usability and visual order.
-    </p>
-
-    <p>
-      On the road, the Polestar 3 felt smooth, planted, and quiet. Driving through Washington gave it
-      a useful test: stop-and-go traffic, uneven pavement, constant lane changes, and city interruptions.
-      It handled all of that with a calm confidence that fit the brand well. The power delivery was quick
-      without feeling theatrical, and the overall ride quality made the vehicle feel substantial.
-    </p>
-
-    <p>
-      What stood out most was how integrated the technology felt. The interface did not come across like
-      a giant tablet awkwardly attached to a car. It felt built into the experience. That distinction matters.
-      A lot of modern vehicles chase “tech” in a way that feels distracting. This felt more mature.
-    </p>
-
-    <h2>The Polestar 4 makes a different statement</h2>
-    <p>
-      If the Polestar 3 felt refined and usable, the Polestar 4 felt more experimental in tone. It drew
-      attention immediately. The shape is lower, sleeker, and more futuristic, with details that feel aimed
-      at people who want their vehicle to look like a forward-looking object rather than a traditional car.
-    </p>
-
-    <p>
-      Inside, the Polestar 4 pushed the minimalist language even further. The cabin felt more lounge-like,
-      more conceptual, and more obviously centered around atmosphere as much as function. It had the kind
-      of presence that makes people stop and stare a little longer than they intended to.
-    </p>
-
-    <p>
-      Even without driving it, the Polestar 4 gave a strong impression of where the brand wants to go next.
-      Not just cleaner transportation, but a fully designed experience where software, material choice,
-      space, and visual identity all sit in the same conversation.
-    </p>
-
-    <h2>Why the visit worked</h2>
-    <p>
-      What made the visit memorable was not just the vehicles themselves. It was how tightly the brand,
-      space, and product all aligned. The showroom communicated the same thing the cars did: restraint,
-      clarity, and confidence. That consistency is rare. A lot of brands talk about design and innovation,
-      but their spaces still feel generic. This one did not.
-    </p>
-
-    <p>
-      For anyone interested in EVs, industrial design, consumer tech, or just the way physical spaces can
-      shape product perception, the Polestar showroom is worth seeing. It is one of those visits that reminds
-      you good technology presentation is not only about specs. It is also about mood, trust, and coherence.
-    </p>
-
-    <h2>Final take</h2>
-    <p>
-      The Polestar 3 felt like the more immediate and livable expression of the brand. The Polestar 4 felt
-      like a sharper glimpse at its ambition. Together, they made a strong case that Polestar understands
-      something many tech-adjacent car companies still struggle with: the future only feels convincing when
-      the details feel resolved.
-    </p>
-
-    <p>
-      In D.C., at least for one visit, that vision came through clearly.
-    </p>
+      <aside class="hero-panel">
+        <div class="panel-label">Current signal</div>
+        <div class="signal-list">
+          <div class="signal-item">Tech that feels real<span>What stands out beyond marketing cycles.</span></div>
+          <div class="signal-item">Hands-on curiosity<span>Learning through interaction, not just documentation.</span></div>
+          <div class="signal-item">Depth without performance<span>Experience applied without forcing a point.</span></div>
+        </div>
+      </aside>
+    </div>
   </section>
-</article>
+
+  <main class="wrap main">
+    <section>
+      <div class="section-title">
+        <h2 id="writing">Featured</h2>
+      </div>
+
+      <article class="featured">
+        <div class="kicker">Featured essay</div>
+        <h3>Why Tech Still Holds Up Outside of Work</h3>
+        <p>
+          There’s a difference between working in technology and actually enjoying it. Over time, that gap becomes noticeable — and worth paying attention to.
+        </p>
+        <div class="meta">
+          <span>March 31, 2026</span>
+          <span>Tech Culture</span>
+          <span>Personal</span>
+        </div>
+      </article>
+
+      <div class="section-title">
+        <h2>Recent writing</h2>
+      </div>
+
+      <div class="posts">
+        <article class="post-card">
+          <div>
+            <div class="tag">Security</div>
+            <h3>What CES Actually Feels Like Versus What You See Online</h3>
+            <p>There’s a difference between being around tech and just consuming summaries of it. One has texture. The other is flattened.</p>
+            <div class="meta"><span>Access governance</span><span>Programs</span></div>
+          </div>
+          <div class="date">Mar 28</div>
+        </article>
+
+        <article class="post-card">
+          <div>
+            <div class="tag">Systems</div>
+            <h3>Why Tokyo Game Show Still Matters</h3>
+            <p>Some spaces still reflect genuine enthusiasm rather than polished release cycles. That difference is noticeable.</p>
+            <div class="meta"><span>Zero Trust</span><span>Infrastructure</span></div>
+          </div>
+          <div class="date">Mar 21</div>
+        </article>
+
+        <article class="post-card">
+          <div>
+            <div class="tag">Tech Culture</div>
+            <h3>Tinkering Is Still the Best Way to Learn Tech</h3>
+            <p>Understanding often follows interaction. Not everything needs to be mastered to be explored.</p>
+            <div class="meta"><span>AI</span><span>Ops reality</span></div>
+          </div>
+          <div class="date">Mar 18</div>
+        </article>
+
+        <article class="post-card">
+          <div>
+            <div class="tag">Observation</div>
+            <h3>Old Tech Still Has a Different Feel</h3>
+            <p>Older systems tend to expose more of what’s happening underneath. That changes how you relate to them.</p>
+            <div class="meta"><span>Culture</span><span>Control</span></div>
+          </div>
+          <div class="date">Mar 12</div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <section class="side-card" id="about">
+        <h3>About</h3>
+        <p>
+          By day: cybersecurity architect. Outside of that: still engaged with technology beyond requirements or expectations.
+        </p>
+      </section>
+
+      <section class="side-card" id="notes">
+        <h3>Areas of interest</h3>
+        <ul>
+          <li>Consumer tech and real-world impressions</li>
+          <li>Hardware, setups, and interaction</li>
+          <li>Games, systems, and broader tech culture</li>
+          <li>Security and identity when relevant</li>
+        </ul>
+      </section>
+
+      <section class="side-card">
+        <h3>Thesis</h3>
+        <p class="quote">
+          The most important systems are usually the ones people only notice after they fail.
+        </p>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>ThreatLines</div>
+      <div>Personal writing on technology, systems, and the experience around them.</div>
+    </div>
+  </footer>
+</body>
+</html>
